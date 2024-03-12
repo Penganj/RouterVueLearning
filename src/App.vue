@@ -1,15 +1,10 @@
 <script setup>
-  import { ref } from 'vue'
-  import { RouterView } from 'vue-router';
-  import Nav from './components/Nav.vue';
-
-  const randomState = ref("")
+import { RouterView } from "vue-router";
+import Nav from "./components/Nav.vue";
 </script>
 
 <template>
   <div>
-    {{ randomState }}
-    <button @click="randomState= 'hello'">x</button>
     <Nav />
     <RouterView />
   </div>
